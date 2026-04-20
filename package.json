@@ -1,0 +1,25 @@
+{
+  "name": "rain-market-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "dev:development": "RAIN_ENVIRONMENT=development node --watch src/index.js",
+    "dev:production": "RAIN_ENVIRONMENT=production node --watch src/index.js",
+    "dev:stage": "RAIN_ENVIRONMENT=stage node --watch src/index.js",
+    "rain:print-env": "node scripts/print-rain-env.mjs",
+    "rain:sync-analytics": "node scripts/sync-rain-analytics.mjs",
+    "start": "node src/index.js",
+    "start:development": "RAIN_ENVIRONMENT=development node src/index.js",
+    "start:production": "RAIN_ENVIRONMENT=production node src/index.js",
+    "start:stage": "RAIN_ENVIRONMENT=stage node src/index.js"
+  },
+  "dependencies": {
+    "@buidlrrr/rain-sdk": "^2.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "pg": "^8.13.3",
+    "viem": "^2.47.6"
+  }
+}
